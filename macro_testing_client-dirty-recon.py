@@ -18,7 +18,7 @@ ws2 = wb2.active
 ws2['H1'] = 'Recon2'
 ws2.title = 'Main2'
 
-print wb2.get_sheet_names()
+#print wb2.get_sheet_names()
 
 wb1.save(filename)
 wb2.save(f)
