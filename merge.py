@@ -47,4 +47,9 @@ def merge(yearly_file_name, daily_file_name):
 
 
 if __name__ == "__main__":
-    merge(sys.argv[1], sys.argv[2])
+    #merge(sys.argv[1], sys.argv[2])
+
+    # Added only for sole purpose of py2exe testing
+    YEARLY_WB = "C:\\Anaconda\\Dirty-Priced-Securities\\Client_Dirty_Recon_test.xlsx"
+    DAILY_WB = "C:\\Anaconda\\Dirty-Priced-Securities\\Client_file.xlsx"
+    merge(YEARLY_WB,DAILY_WB)
