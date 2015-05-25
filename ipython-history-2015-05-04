@@ -1,0 +1,63 @@
+from openpyxl import load_workbook
+dw=load_workbook('data/daily.xlsx')
+dw.worksheets
+dws=dw.worksheets[0]
+dws.cell(1,1)
+dws.cell('A',1)
+dws.cell('A1')
+c=dws.cell('A1')
+c.value
+dws.columns
+dws.columns[0]
+dw=load_workbook('data/daily.xlsx')
+dws=dw.worksheets[0]
+dws.columns
+dws.columns[0]
+[1,2,3,4,5,3,4]
+set([1,2,3,4,5,3,4])
+dws.columns[0]
+dws.columns[0][1:]
+[c.value for c dws.columns[0][1:]]
+[c.value for c in dws.columns[0][1:]]
+dws.columns[0][1:]
+dws.columns[0][1:][0]
+dir(dws.columns[0][1:][0])
+dws.columns[0][1:][0].value
+c=dws.columns[0][1:][0]
+c.value
+dws.columns[0][1:]
+for c in dws.columns[0][1:]:
+    print c.value
+l=[]
+for c in dws.columns[0][1:]:
+    l.append(c.value)
+l
+[c.value for c in dws.columns[0][1:]]
+set([c.value for c in dws.columns[0][1:]])
+set(c.value for c in dws.columns[0][1:])
+s=set(c.value for c in dws.columns[0][1:])
+s
+s.add(set(32,33))
+s.add(set([32,33]))
+s.update(set([32,33]))
+s
+dws.cell(column=2,row=1)
+dws.cell(column=2,row=1).value = 3
+dws.cell(column=2,row=1).value
+enumerate(['a','b', 'c'])
+[enumerate(['a','b', 'c'])]
+[(k,v) for k,v enumerate(['a','b', 'c'])]
+[(k,v) for k,v in enumerate(['a','b', 'c'])]
+enumerate
+for( var i = 0; i < l.length; i++ )
+help(enumerate)
+help(enumerate)
+c=dws.cell(column=2,row=1)
+c
+help(c.style)
+help(c.has_style)
+s=set([1,2,3])
+s.remove(2)
+[None]*4
+['A']*10
+['Akdskjh']*10
